@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		277FCC54729C88742AA94825 /* Pods_GideonBenzGameList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58BAB201A1FE66C3DBB7826 /* Pods_GideonBenzGameList.framework */; };
 		BD8B1456236D32C70044DA59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B1455236D32C70044DA59 /* AppDelegate.swift */; };
 		BD8B1458236D32C70044DA59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B1457236D32C70044DA59 /* ViewController.swift */; };
 		BD8B145D236D32C90044DA59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8B145C236D32C90044DA59 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DBE20BBDFBDC21CEFF77E4A /* Pods-GideonBenzGameList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GideonBenzGameList.release.xcconfig"; path = "Target Support Files/Pods-GideonBenzGameList/Pods-GideonBenzGameList.release.xcconfig"; sourceTree = "<group>"; };
+		9FEE999F540867F836CEEEAF /* Pods-GideonBenzGameList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GideonBenzGameList.debug.xcconfig"; path = "Target Support Files/Pods-GideonBenzGameList/Pods-GideonBenzGameList.debug.xcconfig"; sourceTree = "<group>"; };
+		B58BAB201A1FE66C3DBB7826 /* Pods_GideonBenzGameList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GideonBenzGameList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8B1452236D32C70044DA59 /* GideonBenzGameList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GideonBenzGameList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8B1455236D32C70044DA59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD8B1457236D32C70044DA59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,17 +31,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277FCC54729C88742AA94825 /* Pods_GideonBenzGameList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		703BC2537AE65C46F0E83644 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B58BAB201A1FE66C3DBB7826 /* Pods_GideonBenzGameList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8418A7264754CEA73AF3050 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FEE999F540867F836CEEEAF /* Pods-GideonBenzGameList.debug.xcconfig */,
+				2DBE20BBDFBDC21CEFF77E4A /* Pods-GideonBenzGameList.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BD8B1449236D32C60044DA59 = {
 			isa = PBXGroup;
 			children = (
 				BD8B1454236D32C70044DA59 /* GideonBenzGameList */,
 				BD8B1453236D32C70044DA59 /* Products */,
+				B8418A7264754CEA73AF3050 /* Pods */,
+				703BC2537AE65C46F0E83644 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD8B1464236D32C90044DA59 /* Build configuration list for PBXNativeTarget "GideonBenzGameList" */;
 			buildPhases = (
+				F0F0A55FB342080F2E8036DD /* [CP] Check Pods Manifest.lock */,
 				BD8B144E236D32C70044DA59 /* Sources */,
 				BD8B144F236D32C70044DA59 /* Frameworks */,
 				BD8B1450236D32C70044DA59 /* Resources */,
+				710D19FDC875AA92A23C5605 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +152,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		710D19FDC875AA92A23C5605 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GideonBenzGameList/Pods-GideonBenzGameList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GideonBenzGameList/Pods-GideonBenzGameList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GideonBenzGameList/Pods-GideonBenzGameList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0F0A55FB342080F2E8036DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GideonBenzGameList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD8B144E236D32C70044DA59 /* Sources */ = {
@@ -268,6 +337,7 @@
 		};
 		BD8B1465236D32C90044DA59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FEE999F540867F836CEEEAF /* Pods-GideonBenzGameList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +356,7 @@
 		};
 		BD8B1466236D32C90044DA59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DBE20BBDFBDC21CEFF77E4A /* Pods-GideonBenzGameList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
